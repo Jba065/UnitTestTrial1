@@ -1,0 +1,11 @@
+<p>Welcome {{title}}</p>
+<button (click)="enableBuying()">Enable/Disable Buying</button>
+<div *ngFor="let product of products">
+  <h2>{{product.name}}</h2>
+  <h2>{{product.price}}</h2>
+  <h2>{{product.quantity}}</h2>
+
+
+  <app-alert-details [product]="product" [isUnchanged]= isUnchanged (notify) = "clickMe(product)"></app-alert-details>
+</div>
+
