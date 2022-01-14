@@ -1,8 +1,11 @@
 import { Product } from 'src/product';
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { products } from 'src/data/products';
+
+
+
 
 @Component({
   selector: 'app-product-details',
